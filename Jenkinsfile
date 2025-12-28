@@ -16,8 +16,8 @@ pipeline {
     }
     stage('Tag') {
       steps {
-            bat 'docker tag api-ui-microservices-docker-compose_api-services:latest harsh89shakya/api-services:latest'
-            bat 'docker tag api-ui-microservices-docker-compose_ui-services:latest harsh89shakya/ui-services:latest'
+            bat 'docker tag api-ui-microservices-docker-compose-api-services:latest harsh89shakya/api-services:latest'
+            bat 'docker tag api-ui-microservices-docker-compose-ui-services:latest harsh89shakya/ui-services:latest'
             }
         }
     stage('Login to DockerHub') {
