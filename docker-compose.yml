@@ -1,11 +1,15 @@
 version: '3.8'
 services:
   api-services:
-    build: ./api-services
+    build: 
+      context: ./api-services
+      dockerfile: Dockerfile
     ports:
       - "5000:5000"
   ui-services:
-    build: ./ui-services
+    build: 
+      context: ./ui-services
+      dockerfile: Dockerfile
     ports:
       - "8016:80"
     depends_on:
